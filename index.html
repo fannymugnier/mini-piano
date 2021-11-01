@@ -7,14 +7,13 @@
   <title>JavaScript Vanilla - Mini-piano</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 </head>
 <body>
+  <h1>MINI-PIANO APP</h1>
+  <h2>Use your keyboard to play awesome music!</h2>
+
   <div class="keys">
-    <div data-key="81" class="key white">
-      Q
-      <div class="key black"></div>
-    </div>
-    <div class="key white"></div>
     <div data-key="83" class="key white">
       S
       <div data-key="69" class="key black">E</div>
@@ -46,10 +45,8 @@
       <div data-key="219" class="key black">^</div>
     </div>
     <div data-key="192" class="key white">ù</div>
-    <div data-key="220" class="key white">*</div>
   </div>
 
-  <audio data-key="81" src="sounds/piano-keys/a3.mp3"></audio>
   <audio data-key="83" src="sounds/piano-keys/c3.mp3"></audio>
   <audio data-key="68" src="sounds/piano-keys/d3.mp3"></audio>
   <audio data-key="70" src="sounds/piano-keys/e3.mp3"></audio>
@@ -68,6 +65,13 @@
   <audio data-key="73" src="sounds/piano-keys/a-4.mp3"></audio>
   <audio data-key="80" src="sounds/piano-keys/c-4.mp3"></audio>
   <audio data-key="219" src="sounds/piano-keys/d-4.mp3"></audio>
+
+  <footer>
+    <a href="https://github.com/fannymugnier/mini-piano" target="_blank">
+      <i class="fab fa-github"></i>
+      Fanny Mugnier
+    </a>
+  </footer>
 
   <script>
     function playSound(e) {
