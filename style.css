@@ -9,34 +9,35 @@
   width: fit-content;
 }
 
-.white-key {
+.key {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  position: relative;
-  height: 230px;
-  width: 60px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding-bottom: 15px;
+  transition: all .09s;
+}
+
+.white {
+  position: relative;
+  height: 230px;
+  width: 60px;
   box-shadow: 0px 0px 1px rgb(95, 95, 95),
               1px 1px 2px rgb(95, 95, 95);
 }
 
-.black-key {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+.black {
   position: absolute;
   top: 0;
   right: -17px;
   z-index: 3;
   height: 130px;
   width: 35px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  box-shadow: 1px 1px 2px rgb(95, 95, 95);
   background-color: black;
   color: white;
-  padding-bottom: 15px;
+}
+
+.playing {
+  background-color: rgb(165, 165, 165);
 }
